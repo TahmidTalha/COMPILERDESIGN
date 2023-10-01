@@ -1,0 +1,45 @@
+#include <iostream>
+
+ 
+
+using namespace std;
+
+ 
+
+bool isNumeric(string str) {
+    for (char c : str) {
+        if (c < '0' || c > '9') {
+            return false;
+        }
+    }
+    return true;
+}
+
+ 
+
+int main() {
+    string str;
+
+ 
+
+    cout << "Enter a string: ";
+    cin >> str;
+
+ 
+
+    bool numeric = isNumeric(str);
+
+ 
+
+    if (numeric) {
+        cout << "Input is numeric." << endl;
+    } else {
+        cout << "Input is not numeric." << endl;
+    }
+
+ 
+
+    return 0;
+}
+
+ 
