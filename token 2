@@ -1,0 +1,39 @@
+#include <iostream>
+
+ 
+
+using namespace std;
+
+
+int main() {
+    string expression;
+    cout << "Enter an expression: ";
+    cin >> expression;
+    string operators = "";
+
+ 
+
+ 
+
+    for (int i = 0; i < expression.length(); i++) {
+        char c = expression[i];
+
+ 
+
+ 
+
+        if (c == '+' || c == '-' || c == '*' || c == '/' || c == '%' || c == '=') {
+            operators += c;
+        }
+    }
+
+ 
+
+ 
+
+    cout << "Operators in the expression: " << operators << endl;
+
+ 
+
+    return 0;
+}
